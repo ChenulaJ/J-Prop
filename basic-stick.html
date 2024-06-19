@@ -12,24 +12,46 @@
         background-color: #f4f4f4;
       }
       header {
-        background-color: #fff;
-        text-align: center;
-        padding: 20px 0;
-      }
-      header img {
-        width: 50px;
-        vertical-align: middle;
-      }
-      header h1 {
-        display: inline;
-        font-size: 2.5em;
-        vertical-align: middle;
-      }
-      .specials {
-        text-align: center;
-        font-style: italic;
-        margin: 10px 0;
-      }
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            width: 80px;
+            margin-right: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #B388EB;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            -webkit-text-stroke: 1px #fff;
+        }
+        nav {
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #B388EB;
+        }
       .container {
         width: 80%;
         margin: auto;
@@ -82,29 +104,23 @@
             font-size: 10px;
         }
 
-      h1{
-        font-family: 'Fredoka One', cursive;
-        color: white; /* Replace with exact color if needed */
-        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-        -webkit-text-stroke: 1px #B388EB;
-      }
+     
     </style>
   </head>
   <body>
     <header>
       <div class="header-container">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHF6YdNU26cXn5G736Cs7JWj1n4ePyJoxfxg&s"
-        alt="J-Prop Shop Logo"
-      />
-      <h1>The J-Prop Shop</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="basic-stick.html">Basic Stick</a>
-    </nav>
-  </div>
-    </header>
-    <p class="specials">Specials This Month</p>
+          <div class="logo-container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHF6YdNU26cXn5G736Cs7JWj1n4ePyJoxfxg&s" alt="J-Prop Shop Logo">
+              <h1>The J-Prop Shop</h1>
+          </div>
+          <nav>
+              <a href="index.html">Home</a>
+              <a href="basic-stick.html">Basic Stick</a>
+          </nav>
+      </div>
+  </header>
+
     <div class="container">
       <h2>The Basic Stick</h2>
       <div class="content">
